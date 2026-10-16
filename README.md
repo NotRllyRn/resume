@@ -15,3 +15,8 @@ docker compose up -d --build
 Set the external Docker network and a free address in `.env`. Point a reverse
 proxy at that address on HTTP port 80. Resume files, deployment settings, Wallet
 artifacts, and credentials are intentionally ignored by Git.
+
+## Wallet and phone tap
+
+See [`wallet/README.md`](wallet/README.md) for the Apple Wallet, Google Wallet,
+QR-code, and cross-platform NFC-tag design.

@@ -53,3 +53,12 @@ NDEF writer app, write exactly one URI record containing `RESUME_URL`, lock the
 tag only after testing, and place it away from the phone's own NFC antenna. The
 receiver does not need an app; current iPhones and Android phones recognize URL
 records directly. Keep the QR code as the universal fallback.
+
+## Primary references
+
+- [Apple: Building a Pass](https://developer.apple.com/documentation/walletpasses/building-a-pass)
+- [Apple: NFC pass data](https://developer.apple.com/documentation/walletpasses/pass/nfc-data.dictionary)
+- [Apple: Wallet barcodes](https://developer.apple.com/documentation/walletpasses/pass/barcodes-data.dictionary)
+- [Google: Generic pass flow](https://developers.google.com/wallet/generic/overview/add-to-google-wallet-flow)
+- [Google: Wallet JWTs](https://developers.google.com/wallet/generic/use-cases/jwt)
+- [Google: Smart Tap](https://developers.google.com/wallet/smart-tap/introduction/overview)
