@@ -1,0 +1,16 @@
+# Resume source and output contain personal information.
+*.pdf
+*.tex
+
+# Deployment settings and credentials stay local.
+.env
+.env.*
+!.env.example
+credentials/
+*.cer
+*.key
+*.p12
+*.pem
+
+# Generated Wallet artifacts contain configured identity data.
+wallet/out/

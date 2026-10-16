@@ -1,0 +1,12 @@
+services:
+  resume:
+    build: .
+    restart: unless-stopped
+    networks:
+      lan:
+        ipv4_address: ${RESUME_IPV4:?Set RESUME_IPV4 in .env}
+
+networks:
+  lan:
+    external: true
+    name: ${RESUME_NETWORK:?Set RESUME_NETWORK in .env}
