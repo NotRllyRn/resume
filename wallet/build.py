@@ -160,7 +160,12 @@ def build_google() -> Path:
                 "header": localized("Resume"),
                 "hexBackgroundColor": "#182b4d",
                 "barcode": {"type": "QR_CODE", "value": url, "alternateText": url},
-                "appLinkData": {"webAppLinkInfo": {"appTarget": {"targetUri": {"uri": url}}}},
+                "appLinkData": {
+                    "displayText": localized("Open resume"),
+                    "webAppLinkInfo": {
+                        "appTarget": {"targetUri": {"uri": url, "description": "Open resume"}}
+                    },
+                },
                 "linksModuleData": {"uris": [{"uri": url, "description": "Open resume", "id": "resume"}]},
             }],
         },
